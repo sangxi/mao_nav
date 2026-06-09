@@ -18,7 +18,7 @@
 - 2025-03-25 **v2.0.0** 安全架构升级：密钥迁移至服务端 Functions，同时支持 Cloudflare Pages 和 Vercel 部署。
 
 ## 效果预览
-示例站点: [猫猫导航](https://nav.maodeyu.fun)
+示例站点: [川慈导航](https://dhl.1999091.xyz/)
 ![](preview.png)
 
 ## ✨ 特性
@@ -34,7 +34,7 @@
 
 
 ## 🚀 快速开始
-图文教程可访问[猫猫导航图文教程](https://blog.maodeyu.fun/2025/07/16/nav_mao/)
+图文教程可访问[川慈导航图文教程](https://blog.maodeyu.fun/2025/07/16/nav_mao/)
 
 > 💬 **部署遇到问题？** 欢迎加入 QQ 交流群：**494775899**，群里有热心小伙伴一起帮你排查问题。
 ### 🚀 部署到 Cloudflare（推荐）
