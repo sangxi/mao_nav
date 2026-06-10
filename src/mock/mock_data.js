@@ -19,6 +19,13 @@ export const mockData = {
           "url": "https://aaa.1999091.xyz/#/login",
           "description": "老牌机场",
           "icon": "https://www.faviconextractor.com/favicon/aaa.1999091.xyz"
+        },
+        {
+          "id": "site-1781094966147",
+          "name": "川慈订阅生成器",
+          "url": "https://c.az01.cc.cd/",
+          "description": "",
+          "icon": "https://www.faviconextractor.com/favicon/c.az01.cc.cd"
         }
       ]
     },
