@@ -26,6 +26,13 @@ export const mockData = {
           "url": "https://c.az01.cc.cd/",
           "description": "",
           "icon": "https://www.faviconextractor.com/favicon/c.az01.cc.cd"
+        },
+        {
+          "id": "site-1781099154730",
+          "name": "IP优选工具",
+          "url": "https://ip.164746.xyz/",
+          "description": "IP优选工具",
+          "icon": ""
         }
       ]
     },
