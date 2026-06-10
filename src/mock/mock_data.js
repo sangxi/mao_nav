@@ -33,6 +33,13 @@ export const mockData = {
           "url": "https://ip.164746.xyz",
           "description": "IP优选工具",
           "icon": ""
+        },
+        {
+          "id": "site-1781104288402",
+          "name": "订阅转换工具",
+          "url": "https://sub.1999091.xyz",
+          "description": "",
+          "icon": "https://www.faviconextractor.com/favicon/sub.1999091.xyz"
         }
       ]
     },
