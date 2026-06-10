@@ -305,6 +305,13 @@ export const mockData = {
           "url": "https://www.52pojie.cn/",
           "description": "软件安全与破解技术论坛",
           "icon": "/sitelogo/www.52pojie.cn.ico"
+        },
+        {
+          "id": "site-1781100027699",
+          "name": "川慈论坛",
+          "url": "https://az01.site/",
+          "description": "川慈论坛",
+          "icon": ""
         }
       ]
     },
