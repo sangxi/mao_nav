@@ -101,15 +101,15 @@ export const mockData = {
       "sites": [
         {
           "id": "site-1780990175978",
-          "name": "川慈码支付",
-          "url": "https://admin.1999091.xyz/",
-          "description": "互联网网站支付平台",
-          "icon": "https://www.faviconextractor.com/favicon/admin.1999091.xyz"
+          "name": "川慈博客",
+          "url": "https://chuan.az01.site",
+          "description": "互联网互联网博客平台",
+          "icon": "https://www.faviconextractor.com/favicon/chuan.az01.site"
         },
         {
           "id": "site-1780990411836",
           "name": "川慈两元机场",
-          "url": "https://aaa.1999091.xyz/#/login",
+          "url": "https://k.az01.cc.cd",
           "description": "老牌机场",
           "icon": "https://www.faviconextractor.com/favicon/aaa.1999091.xyz"
         },
