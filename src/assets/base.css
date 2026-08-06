@@ -23,9 +23,10 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: transparent; /* 主页面背景设置透明，露出自定义背景图 */
-  --color-background-soft: rgba(255,255,255,0.25);
-  --color-background-mute: rgba(255,255,255,0.4);
+  --color-background: transparent;
+  /* 浅色‑侧边栏低透明度，突出毛玻璃效果 */
+  --color-background-soft: rgba(255,255,255,0.20);
+  --color-background-mute: rgba(255,255,255,0.26);
 
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
@@ -36,11 +37,11 @@
   --section-gap: 160px;
 }
 
-/* 暗色模式 */
+/* 暗色模式磨砂参数 */
 .dark {
   --color-background: transparent;
-  --color-background-soft: rgba(0,0,0,0.35);
-  --color-background-mute: rgba(0,0,0,0.5);
+  --color-background-soft: rgba(0,0,0,0.24);
+  --color-background-mute: rgba(0,0,0,0.30);
 
   --color-border: var(--vt-c-divider-dark-2);
   --color-border-hover: var(--vt-c-divider-dark-1);
@@ -52,8 +53,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: transparent;
-    --color-background-soft: rgba(0,0,0,0.35);
-    --color-background-mute: rgba(0,0,0,0.5);
+    --color-background-soft: rgba(0,0,0,0.24);
+    --color-background-mute: rgba(0,0,0,0.30);
 
     --color-border: var(--vt-c-divider-dark-2);
     --color-border-hover: var(--vt-c-divider-dark-1);
@@ -96,10 +97,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  /* 背景图API预留，后续你只需要在这里替换图片地址 */
-  background‑image: url("你的自定义背景API链接");
-  background‑size: cover;
-  background‑attachment: fixed;
-  background‑position: center;
+
+  /* 随机在线壁纸，毛玻璃虚化载体 */
+  background-image: url("https://api.btstu.cn/sjbz/api.php?lx=meizi&xz=1920*1080");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
