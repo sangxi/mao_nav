@@ -1,77 +1,106 @@
-/* 整体布局 */
-.layout{
-  display:flex;
-  min-height:100vh;
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* 侧边栏 浅色透明毛玻璃 */
-.sidebar{
-  width:220px;
-  background: var(--color-background-mute);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 2px 0 8px rgba(0,0,0,0.03);
-  border-radius: 0 18px 18px 0;
-  padding-top:20px;
-}
-.sidebar-item{
-  margin:8px 14px;
-  padding:11px 16px;
-  border-radius:999px; /* 侧边栏菜单椭圆圆角 */
-  cursor: pointer;
-  transition: all 0.22s ease;
-}
-.sidebar-item:hover{
-  background-color:var(--color-background-soft);
+/* semantic color variables for this project */
+:root {
+  --color-background: transparent;
+  /* 浅色‑侧边栏低透明度，突出毛玻璃效果 */
+  --color-background-soft: rgba(255,255,255,0.20);
+  --color-background-mute: rgba(255,255,255,0.26);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
 }
 
-/* 主内容区域 */
-.main-content{
-  width:100%;
-  padding:35px;
+/* 暗色模式磨砂参数 */
+.dark {
+  --color-background: transparent;
+  --color-background-soft: rgba(0,0,0,0.24);
+  --color-background-mute: rgba(0,0,0,0.30);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
 }
 
-/* 顶部搜索框 椭圆圆角 */
-.search-box{
-  width:100%;
-  padding:13px 28px;
-  border-radius:999px;
-  border:none;
-  background:var(--color-background-mute);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  font-size:15px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: transparent;
+    --color-background-soft: rgba(0,0,0,0.24);
+    --color-background-mute: rgba(0,0,0,0.30);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
   color: var(--color-text);
-}
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-/* 网站快捷标签卡片：椭圆圆角、缩小尺寸、一行8个、网红渐变配色 */
-.link-card{
-  background: var(--color-background-soft);
-  border-radius:999px;
-  padding:14px 16px;
-  min-width:130px;
-  border:0;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: 0.25s ease;
-}
-/* 随机网红渐变，6款流行色系 */
-.link-card:nth-child(6n){background: rgba(255,182,193,0.35)}
-.link-card:nth-child(6n+1){background: rgba(173,216,230,0.35)}
-.link-card:nth-child(6n+2){background: rgba(221,160,221,0.35)}
-.link-card:nth-child(6n+3){background: rgba(144,238,144,0.35)}
-.link-card:nth-child(6n+4){background: rgba(255,218,185,0.35)}
-.link-card:nth-child(6n+5){background: rgba(176,224,230,0.35)}
-
-.link-card:hover{
-  transform: translateY(-4px);
-  box-shadow:0 6px 16px rgba(0,0,0,0.08);
-}
-
-/* 卡片容器，自适应排布，一行最多8个、设置间距 */
-.card‑wrap{
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap:18px;
+  /* 随机在线壁纸，毛玻璃虚化载体 */
+  background-image: url("https://api.btstu.cn/sjbz/api.php?lx=meizi&xz=1920*1080");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
