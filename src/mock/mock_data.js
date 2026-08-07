@@ -47,6 +47,13 @@ export const mockData = {
           "url": "https://github.com",
           "description": "代码托管平台",
           "icon": "/sitelogo/github.com.ico"
+        },
+        {
+          "id": "site-1786094789846",
+          "name": "川慈中转站",
+          "url": "https://api.az01.cc.cd/home",
+          "description": "",
+          "icon": "https://www.faviconextractor.com/favicon/api.az01.cc.cd"
         }
       ]
     },
@@ -130,7 +137,7 @@ export const mockData = {
         {
           "id": "site-1781104288402",
           "name": "订阅转换工具",
-          "url": "https://sub.1999091.xyz",
+          "url": "https://sub.az01.site/",
           "description": "",
           "icon": "https://www.faviconextractor.com/favicon/sub.1999091.xyz"
         }
