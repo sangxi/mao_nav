@@ -51,7 +51,7 @@ export const mockData = {
         {
           "id": "site-1786094789846",
           "name": "川慈中转站",
-          "url": "https://api.az01.cc.cd/home",
+          "url": "https://api.az01.site/",
           "description": "",
           "icon": "https://www.faviconextractor.com/favicon/api.az01.cc.cd"
         }
@@ -589,6 +589,5 @@ export const mockData = {
     }
   ],
   "title": "川慈导航",
-  "search": "bing",
-  "_fileSha": "2ef2601cbfb23a11176c56c0ba0457983a1e5b77"
+  "search": "bing"
 }
