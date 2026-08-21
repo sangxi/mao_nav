@@ -204,6 +204,13 @@ export const mockData = {
           "url": "https://my.racknerd.com/index.php?rp=/login",
           "description": "",
           "icon": ""
+        },
+        {
+          "id": "site-1787300234372",
+          "name": "免费二级域名",
+          "url": "https://my.dnshe.com/index.php?m=domain_hub&view=domains",
+          "description": "免费不需要备案的二级域名",
+          "icon": ""
         }
       ]
     },
